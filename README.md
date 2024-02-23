@@ -1,4 +1,8 @@
-# Enhanced-Safety-Assurance-in-Complex-Industrial-Systems-Leveraging-Ontologies-STL-Matlab-Simulink
+# Strengthening  Safety Assurance in Complex Industrial Systems: Integrating Ontology's and Signal Temporal Logic for Enhanced Risk Management
+## Brief Summary:
+#### This repo contains the result files, Matlab scripts - both the ones that gave us the correct resutls and those that gave us not so good a result. Some of the generated figures are here.
+Also, we included the ontology files we worked with, which is the Eastman Tennessee plant's ontology that we designed - which may not be as perfect and complete as in the original model. However, the ontology was for the purpose of the experiments we conducted in this paper. Note that some figures have been altered in the course of the experiments where we changed a lot of Thresholds and Set points back and forth for to test the violations monitoring system we developed.
+
 This repo is where we put the artifacts from our experiments described in our paper - Enhanced Safety Assurance in Complex Industrial Systems: Leveraging Ontologies, Signal Temporal Logic(STL), and Matlab Simulink for Effective Boundary Violation Detection
 Welcome to the Boundary Violation Experiments repository. This guide will walk you through the process of running Matlab scripts for simulation monitoring and converting XML log files into ontology files for further analysis.
 
@@ -33,7 +37,7 @@ After running the Matlab simulation, you'll need to convert the generated XML lo
 
 Verify that the XML log files are present in the specified output directory.
 
-Run the Convert_ont.py file to convert the XML file to RDF
+Run the Violation_ont.py file to convert the XML file to RDF
 
 Then use Protege to open the ontology file for analysis
 Execute the conversion process. The command might look something like this, depending on your tool:
