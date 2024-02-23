@@ -1,0 +1,2 @@
+Violation detected in Reactor Pressure Alt1 for formula: ev (reactorPressure[t] > 3000)
+Violation detected in Reactor Pressure Alt2 for formula: alw (reactorPressure[t] > 2800 and reactorPressure[t] < 2900)

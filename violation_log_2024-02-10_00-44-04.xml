@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Violations>
+   <Violation>
+      <Parameter>Reactor Pressure Alt1</Parameter>
+      <Formula>ev (reactorPressure[t] &gt; 3000)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Reactor Pressure Alt2</Parameter>
+      <Formula>alw (reactorPressure[t] &gt; 2800 and reactorPressure[t] &lt; 2900)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Reactor Level</Parameter>
+      <Formula>alw (reactorLevel[t] &gt; 50) and alw(reactorLevel[t] &lt; 100)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Reactor Level Alt1</Parameter>
+      <Formula>ev (reactorLevel[t] &lt; 45)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Reactor Level Alt2</Parameter>
+      <Formula>alw (reactorLevel[t] &lt;= 105)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Reactor Temperature</Parameter>
+      <Formula>alw (reactorTemperature[t] &lt; 150)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Reactor Temperature Alt</Parameter>
+      <Formula>alw (reactorTemperature[t] &gt; 120 and reactorTemperature[t] &lt; 150)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Stripper Level</Parameter>
+      <Formula>alw (stripperLevel[t] &gt; 30) and alw(stripperLevel[t] &lt; 100)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Stripper Level Alt1</Parameter>
+      <Formula>alw (stripperLevel[t] &gt;= 25)</Formula>
+   </Violation>
+   <Violation>
+      <Parameter>Stripper Level Alt2</Parameter>
+      <Formula>ev (stripperLevel[t] &gt; 105)</Formula>
+   </Violation>
+</Violations>
