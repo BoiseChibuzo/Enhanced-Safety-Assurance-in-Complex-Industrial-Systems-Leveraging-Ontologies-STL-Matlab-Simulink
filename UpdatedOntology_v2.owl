@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N0f326254065946e99eb8e228755659b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology/dependsOn"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology/ReactorLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasSetPoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#StripperBottomValve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Mixer">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#isControlledBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ControlDevice"/>
+    <rdfs:comment>This property relates a ProcessVariable to the ControlDevice that controls it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ReactorTemperature">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#FeedValve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasOutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Reactor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Component"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ControlDevice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Mixer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Component"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Compressor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Component"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/affects">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Separator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Component"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasMaxValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ControlDevice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/ReactorTemperature">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasProcessVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+    <rdfs:comment>This property relates a ProcessUnit to the ProcessVariable it controls.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Stripper">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Component"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#StripperLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#SeparatorLevelController">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/isControlledBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/requiresMonitoring">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ReactorLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/ReactorPressure">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessVariable"/>
+    <owl:intersectionOf rdf:nodeID="N0f326254065946e99eb8e228755659b1"/>
+    <owl:intersectionOf rdf:nodeID="N67a451263d2041f28c103fd3de9519c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasInput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#StripperLevelController">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasMinValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ControlDevice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#SeparatorRecycleValve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#SeparatorTemperatureController">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasCurrentValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#FeedFlowrateController">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#StripperRecycleValve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProductValve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#isConnectedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67a451263d2041f28c103fd3de9519c7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/ontology/dependsOn"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/ontology/ReactorTemperature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ReactorPressure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/StripperAlarmSystem">
+    <rdf:type rdf:resource="http://example.org/ontology/AlarmSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasProcessVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/StripperLevel">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Stripper">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/Reactor">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasSetpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/ReactorAlarmSystem">
+    <rdf:type rdf:resource="http://example.org/ontology/AlarmSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#StripperTemperatureController">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasOutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#SeparatorLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/isConnectedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasCriticalStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/ReactorLevel">
+    <rdf:type rdf:resource="http://example.org/ontology/ProcessVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#SeparatorBottomValve">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Valve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProductFlowrateController">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Controller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasMaxValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#Component">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology/hasInput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#hasMinValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/chibuzoukegbu/ontologies/2023/11/untitled-ontology-6#ProcessUnit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
