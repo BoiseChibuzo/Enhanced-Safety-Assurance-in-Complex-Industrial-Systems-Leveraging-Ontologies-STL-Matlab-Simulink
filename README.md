@@ -1,6 +1,6 @@
 # Strengthening  Safety Assurance in Complex Industrial Systems: Integrating Ontology's and Signal Temporal Logic for Enhanced Risk Management
 ## Brief Summary:
-#### This repo contains the result files, Matlab scripts - both the ones that gave us the correct resutls and those that gave us not so good a result. Some of the generated figures are here.
+This repo contains the result files, Matlab scripts - both the ones that gave us the correct resutls and those that gave us not so good a result. Some of the generated figures are here.
 Also, we included the ontology files we worked with, which is the Eastman Tennessee plant's ontology that we designed - which may not be as perfect and complete as in the original model. However, the ontology was for the purpose of the experiments we conducted in this paper. Note that some figures have been altered in the course of the experiments where we changed a lot of Thresholds and Set points back and forth for to test the violations monitoring system we developed.
 
 This repo is where we put the artifacts from our experiments described in our paper - Enhanced Safety Assurance in Complex Industrial Systems: Leveraging Ontologies, Signal Temporal Logic(STL), and Matlab Simulink for Effective Boundary Violation Detection
@@ -16,7 +16,7 @@ Setup Instructions
 Clone this repository to your local machine using the command:
 
 ```
-git clone https://example.com/boundary-violation-experiments.git
+git clone https://Enhanced-Safety-Assurance-in-Complex-Industrial-Systems-Leveraging-Ontologies-STL-Matlab-Simulink.git
 Change your working directory to the cloned repository:
 ```
 
